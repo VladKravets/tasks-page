@@ -25,7 +25,7 @@ const Tasks = () => {
 
     return (
         <>
-            <TaskTable/>
+            <TaskTable dataImg={photos}/>
 
         </>
     );
