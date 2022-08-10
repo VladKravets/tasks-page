@@ -23,11 +23,7 @@ const data = [
         </>
         ,
         date: 'Today - 06 Jan',
-        assignee: <Avatar.Group>
-            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>
-            <Avatar
-                src="https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg"/>
-        </Avatar.Group>,
+        assignee: null,
         tags: ['Done'],
     },
     {
@@ -38,16 +34,7 @@ const data = [
         </>
         ,
         date: '21 Aug, 2020',
-        assignee: <Avatar.Group maxCount={3}>
-            <Avatar
-                src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/04/reverse-image-search-627b7e49986b0-sej-760x400.png"/>
-            <Avatar style={{backgroundColor: '#f56a00'}}>K</Avatar>
-            <Tooltip title="Ant User" placement="top">
-                <Avatar
-                    src="https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000"/>
-            </Tooltip>
-            <Avatar style={{backgroundColor: '#1890ff'}} icon={<AntDesignOutlined/>}/>
-        </Avatar.Group>,
+        assignee:null,
         tags: ['To do'],
     },
     {
@@ -57,12 +44,7 @@ const data = [
             <ArrowDownOutlined style={{color: '#4bb318'}}/>Low
         </>,
         date: '13 Aug, 2020',
-        assignee: <Avatar.Group>
-            <Avatar style={{backgroundColor: '#f56a00'}}>Andrey</Avatar>
-            <Tooltip title="Ant User" placement="top">
-                <Avatar style={{backgroundColor: '#87d068'}} icon={<UserOutlined/>}/>
-            </Tooltip>
-        </Avatar.Group>,
+        assignee:null,
         tags: ['To do'],
     },
     {
@@ -72,10 +54,7 @@ const data = [
             <ArrowDownOutlined style={{color: '#4bb318'}}/>Low
         </>,
         date: '27 Jul, 2020',
-        assignee: <Avatar.Group>
-            <Avatar
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd58judYx225Niz5uRBaJc1UJi4DFHjOZNJA&usqp=CAU"/>
-        </Avatar.Group>,
+        assignee: null,
         tags: ['in progress'],
     },
     {
@@ -85,11 +64,7 @@ const data = [
             <ArrowUpOutlined style={{color: '#f50000'}}/>High
         </>,
         date: '19 Jul, 2020',
-        assignee: <Avatar.Group>
-            <Avatar src="https://joeschmoe.io/api/v1/random"/>
-            <Avatar
-                src="https://www.esafety.gov.au/sites/default/files/2019-08/Remove%20images%20and%20video.jpg"></Avatar>
-        </Avatar.Group>,
+        assignee: null,
         tags: ['Done'],
     },
 ];
