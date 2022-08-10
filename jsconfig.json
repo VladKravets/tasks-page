@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "assets/*": ["assets/*"],
+      "components/*": ["components/*"],
+      "constants/*": ["constants/*"],
+      "hooks/*": ["hooks/*"],
+      "http/*": ["http/*"],
+      "pages/*": ["pages/*"],
+      "shared/*": ["shared/*"],
+      "store/*": ["store/*"],
+      "styles/*": ["styles/*"],
+      "utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

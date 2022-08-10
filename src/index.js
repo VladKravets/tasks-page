@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
+import configureStore from './store';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import '@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css';
+import 'antd/dist/antd.css';
+
+import theme from 'styles/theme';
+import * as serviceWorker from './serviceWorker';
+import RouterComponent from 'router';
+
+import './styles/index.scss';
+
+const store = configureStore();
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        <ThemeProvider theme={theme}>
+          <RouterComponent />
+        </ThemeProvider>
+      </Router>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

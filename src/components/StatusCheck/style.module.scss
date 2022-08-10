@@ -1,0 +1,66 @@
+.statusCheck {
+  text-align: left;
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding: 24px;
+    border-bottom: 1px solid #F0F1F2;
+  }
+
+
+  &__items {
+    
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px;
+      border-bottom: 1px solid #F0F1F2;
+
+
+      &__label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: #304156;
+      }
+
+      &__status {
+        background: #FFDD00;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 4px;
+        border-radius: 4px;
+        color: #a38f0d;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+.assignet {
+  background-color: #9cd6f7;
+  color: #0376E3;
+}
+
+.reviewed {
+  background-color: #d09ded;
+  color: #9056b3;
+}
+
+.approved {
+  color: #73D500;
+  background-color: #d5faaa;
+}

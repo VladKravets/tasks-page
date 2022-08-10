@@ -1,0 +1,2 @@
+export const TOGGLE__SIDEBAR = "TOGGLE_SIDEBAR";
+export const CHANGE_OPEN_KEYS = "CHANGE_OPEN_KEYS";

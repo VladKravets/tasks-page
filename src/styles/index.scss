@@ -1,0 +1,99 @@
+//Custom styles
+@import './normalize.scss';
+@import './global-variables';
+
+html {
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+
+body {
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafbfb;
+  box-sizing: border-box;
+
+  overflow: overlay;
+
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    content: none;
+  }
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000000;
+}
+
+​img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+//? ??????????????
+.flex {
+  box-sizing: border-box;
+  flex: 1;
+}
+
+//? Custom scrollbar
+
+::-webkit-scrollbar {
+  appearance: none;
+  height: 7px;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #828d99;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
